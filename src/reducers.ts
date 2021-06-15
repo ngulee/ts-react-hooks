@@ -74,6 +74,7 @@ export const shoppingCartReducer = (
 ) => {
   switch (action.type) {
     case Types.Add:
+      console.log('action:', action)
       return state + 1;
     default:
       return state;
